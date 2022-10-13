@@ -435,7 +435,7 @@
 
  
 
-   <div class="backdrop is-hidden" data-modal>
+   <div class="backdrop" data-modal>
     <div class="modal">
       
       <button class="modal__close" data-modal-close>
@@ -443,9 +443,58 @@
           <use href="./images/symbol-defs.svg#icon-hresticmin"></use>
         </svg>
       </button>
+
+      <form class="form">
+      <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+<label class="label" for="input__menmin">
+  <span class="label__text">Ім'я</span>
+</label>
+<div class="field">
+  <input
+   class="field__input"
+    type="name" 
+    name="name" 
+    requiredn 
+    id="input__menmin">
+  <svg class="field__icon" width="18" height="18">
+    <use href="./images/symbol-defs.svg#icon-menmin"></use>
+  </svg>
+  </div>
+
+  <label class="label" for="input__telmodmin">
+    <span class="label__text">Телефон</span>
+  </label>
+  <div class="field">
+    <input 
+        class="field__input"
+        type="tel" 
+        name="tel" 
+        requiredn 
+        id="input__telmodmin">
+    <svg class="field__icon" width="18" height="18">
+      <use href="./images/symbol-defs.svg#icon-telmodmin"></use>
+    </svg>
     </div>
 
-   </div>
+    <label class="label" for="input__envelopemin">
+      <span class="label__text">Пошта</span>
+    </label>
+    <div class="field">
+       <input 
+        class="field__input"
+        type="email"
+        name="email"
+        requiredn
+        id="input__envelopemin">
+      <svg class="field__icon" width="18" height="18">
+        <use href="./images/symbol-defs.svg#icon-envelopemin"></use>
+      </svg>
+      </div>
+
+
+  </form>
+
+   
    <script src="./js/modal.js"></script>
 </body>
 
