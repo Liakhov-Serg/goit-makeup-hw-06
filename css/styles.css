@@ -1375,6 +1375,7 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .privacy {
+  display: flex;
 
 }
 .privacy__wpapp {
@@ -1391,6 +1392,20 @@ color: rgba(117, 117, 117, 0.5);
 .privacy__icon {
   opacity: 0;
 }
+.privacy__text {
+  position: absolute;
+
+ line-height: 1.71;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.03em;
+
+color: #757575;
+
+}
+.privacy__link {
+  
+}
 .privacy__input:checked + .privacy__wpapp {
   border-color: transparent;
 }
@@ -1402,4 +1417,35 @@ color: rgba(117, 117, 117, 0.5);
 
 .close__icon {
  
+}
+.button__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/* size button */
+min-width: 200px;
+height: 50px;
+border-radius: 4px;
+
+
+ /* color shadow batton*/
+ background: var(--body-text-color);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+/* position text button */
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 10px 52px;
+   text-align: center;
+
+    /* text button */
+
+ font-weight: 700;
+
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+position: absolute;
+  
+  
 }
