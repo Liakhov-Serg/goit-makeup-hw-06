@@ -958,6 +958,9 @@ color: var(--primery-fon-color);
   padding-bottom: 20px;
 
 }
+/**.label__text__footer {
+  color: red;
+}**/
 .field__footer {
   display: flex;
   
@@ -1376,9 +1379,15 @@ color: rgba(117, 117, 117, 0.5);
 
 .privacy {
   display: flex;
+  align-items: center;
 
 }
-.privacy__wpapp {
+.privacy__input {
+  appearance: none;
+  position: absolute;
+
+}
+.privacy__wrapp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1390,10 +1399,23 @@ color: rgba(117, 117, 117, 0.5);
 
 }
 .privacy__icon {
+  display: inline-block;
   opacity: 0;
+  width: 20px;
+  height: 20px;
+
+
+
 }
+.privacy__input:checked .privacy__icon {
+  background-image: url(../images/checkboxmin.svg);
+  background-size: 15px;
+  background-color: var(--body-text-color);
+}
+
 .privacy__text {
-  position: absolute;
+  margin-left: 5px;
+  
 
  line-height: 1.71;
 /* identical to box height, or 171% */
@@ -1404,7 +1426,7 @@ color: #757575;
 
 }
 .privacy__link {
-  
+
 }
 .privacy__input:checked + .privacy__wpapp {
   border-color: transparent;
@@ -1418,6 +1440,10 @@ color: #757575;
 .close__icon {
  
 }
+.button__modal__block {
+  display: flex;
+  justify-content: center;
+}
 .button__modal {
   display: flex;
   justify-content: center;
@@ -1426,6 +1452,7 @@ color: #757575;
 min-width: 200px;
 height: 50px;
 border-radius: 4px;
+border: transparent;
 
 
  /* color shadow batton*/
