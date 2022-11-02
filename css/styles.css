@@ -1269,7 +1269,7 @@ transition-timing-function: var(--transition-timing-function);
 .modal {
   position: absolute;
   min-width: 528px;
-  height: 581px;
+  
   padding: 40px;
 
   top: 50%;
@@ -1300,9 +1300,9 @@ background-color: transparent;
 
 
 }
-.form {
+/* .form { */
 
-}
+
 .form__title {
   padding-bottom: 20px;
 
@@ -1382,18 +1382,16 @@ color: rgba(117, 117, 117, 0.5);
 .checkbox-label {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
+  margin-left: 13px;
+  
 
 }
 .checkbox {
-  appearance: none;
+  
   position: absolute;
 
-  background-image: url(../images/checkboxmin.svg);
-  background-size: 15px;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  background-color: red;
+  
 
 }
 .privacy__wrapp {
@@ -1409,16 +1407,20 @@ color: rgba(117, 117, 117, 0.5);
 }
 .checkbox__icon {
   display: inline-block;
-  opacity: 0;
-  width: 20px;
-  height: 20px;
+  
+  width: 16px;
+  height: 15px;
+  
 
+  
+  border-radius: 4px;
+cursor: pointer;
 
 
 }
 .checkbox:checked ~ .checkbox-icon{
   background-image: url(../images/checkboxmin.svg);
-  background-size: 15px;
+  background-size: 16px 15px;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -1426,9 +1428,9 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .privacy__text {
-  margin-left: 5px;
-  margin-bottom: 30px;
-  
+  margin-left: 8px;
+ 
+  cursor: pointer;
 
  line-height: 1.71;
 /* identical to box height, or 171% */
@@ -1438,24 +1440,25 @@ letter-spacing: 0.03em;
 color: #757575;
 
 }
-.privacy__link {
+/* .privacy__link { */
 
-}
-/* .privacy__input:checked + .privacy__wpapp { */
-  border-color: transparent;
+
+.checkbox__icon:checked + .privacy__text {
+  background-color: blue;
 }
 /* .privacy__input:checked + .privacy__wpapp */
 /* .privacy__icon { */
-  opacity: 0;
+   
 
-}
 
-.close__icon {
+
+/* .close__icon { */
  
-}
+
 .button__modal__block {
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 .button__modal {
   display: flex;
@@ -1485,7 +1488,7 @@ border: transparent;
 line-height: 1.88;
 letter-spacing: 0.06em;
 color: #FFFFFF;
-position: absolute;
+
   
   
 }
