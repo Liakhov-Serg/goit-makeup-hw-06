@@ -160,27 +160,26 @@ body {
 button {
   cursor: pointer;
 }
-.list-stale-image {
-  display: block;
-}
 
+/* header */
 /* основний фон шапки */
 .header {
   background-color:var(--primery-fon-color);
   border: 1px solid rgba(236, 236, 236, 1);
 }
 /* conteiner header */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Menu navigation */
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 /* logotype */
 .logo:hover {
   color: var(--body-text-color);
@@ -242,28 +241,18 @@ ul {
   transition-timing-function: var(--transition-timing-function);
 }
 
-
 .link {
   text-decoration: none;
   color: #000;
-
-
 }
-
-
-
-
 
 .site-nav.list {
   display: flex;
 
-font-family: 'Roboto';
-font-style: normal;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 font-weight: 500;
-position: relative;
+
 
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -276,6 +265,7 @@ position: relative;
 
 .site-nav .item {
    margin-right: 50px;
+   color: var(--body-text-color);
 }
 .site-nav .item:last-child {
   margin-right: 0;
@@ -317,11 +307,7 @@ color: #2196F3;
   letter-spacing: 0.02em;
   color: var(--primery-text-color-gray);
 
-  
-
-
-
-}
+ }
 .auth-nav .mail {
   margin-right: 0px;
   margin-left: 0px;
@@ -388,7 +374,6 @@ color: #2196F3;
 }
 
 
-
 /* hero */
 .section {
   padding-top: 94px;
@@ -400,7 +385,7 @@ color: #2196F3;
 max-width: 1600px;
   height: 600px;
 
-  margin-left: 0px;
+  margin: 0 auto;
   background-size: contain;
 
   padding-top: 0px;
@@ -433,7 +418,7 @@ max-width: 1600px;
   line-height: 1.36;
   color: #ffffff;
 
-  /* hero backgraund */
+  /* hero batton */
 }
 .hero-batton {
   display: flex;
@@ -500,14 +485,14 @@ max-width: 1600px;
 .box-works-item:nth-child(4)::before {
   background-image: url(../images/technologymin.svg);
 }
+
+
+/* Чим ми займаємося */
+
 .section__works__title {
     display: flex;
-    /* outline: 5px solid salmon; */
-    position: relative;
-    
-    
-    
-    
+ 
+     
 }
 .works__title__tech {
     display: flex;
@@ -565,14 +550,13 @@ color: #757575;
 .section.works {
   padding-top: 0;
 }
-/* Чим ми займаемося та наша команда--> */
+/* our team */
 
 .section-made {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   margin-top: 0px;
-  margin-bottom: 0px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -585,13 +569,12 @@ color: #757575;
   padding-right: 0px;
 }
 
-/* our team */
-
 .section-team {
   background-color: rgba(245, 244, 250, 1);
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* team cards */
 .cards {
   background-color: rgba(255, 255, 255, 1);
 
@@ -633,6 +616,7 @@ color: #757575;
   color: rgba(117, 117, 117, 1);
   margin-bottom: 16px;
 }
+
 /**social**/
 
 .social__list {
@@ -672,10 +656,6 @@ color: #757575;
   
 }
 
-.social__link:focus .social__icon {
-  fill: #ffffff;
-  
-}
 .social__icon {
   display: flex;
   justify-content: center;
@@ -691,13 +671,12 @@ color: #757575;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
-/*--наші клієнти--*/
+/*--Постійні клієнти--*/
 
 .our__clients {
-  font-family: Roboto;
+  
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
@@ -718,10 +697,7 @@ color: #757575;
 
   width: 170px;
   height: 92px;
-  /* border: 1px solid #afb1b8; */
-  
-
-  
+   
 }
 .client__item {
   display: flex;
@@ -738,12 +714,12 @@ color: #757575;
 
 .client__item:hover,
 .client__item:focus {
-  border-color:  rgba(33, 150, 243, 1);
+  border-color:  var(--body-text-color);
   
 }
 .client__item:hover .client__label,
 .client__item:focus .client__label {
-color: #2196f3;
+color: var(--body-text-color);
 fill: currentColor;
 
 }
@@ -756,7 +732,7 @@ fill: currentColor;
 }
 .client__cards:hover .client__label,
 .client__cards:focus .client__label {
-  fill: rgba(33, 150, 243, 1);
+  fill: var(--body-text-color);
   
 
 }
@@ -771,17 +747,15 @@ fill: currentColor;
 
 /* footer backgraund */
 
-/* footer position */
-
 .footer {
   background-color: rgba(47, 48, 58, 1);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/*text footer*/
+/*logo footer*/
 .logo-footer .accent-footer:focus,
 .logo-footer .accent-footer:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--body-text-color);
 }
 
 .logo-footer {
@@ -790,9 +764,8 @@ fill: currentColor;
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0.03em;
-  text-align: left;
   text-decoration: none;
-  color: rgba(33, 150, 243, 1);
+  color: var(--body-text-color);
 
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -804,8 +777,8 @@ fill: currentColor;
   font-weight: bold;
   line-height: 0px;
   letter-spacing: 0.03em;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
+ 
+  color: var(--primery-fon-color);
 
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -813,7 +786,7 @@ fill: currentColor;
 
 .map:focus,
 .map:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--body-text-color);
   
 }
 
@@ -826,7 +799,7 @@ fill: currentColor;
 
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--primery-fon-color);
 
   display: inline-block;
   margin-top: 20px;
@@ -853,7 +826,7 @@ fill: currentColor;
 }
 .mail-footer:hover,
 .mail-footer:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--body-text-color);
 }
 
 .tel-footer {
@@ -875,7 +848,7 @@ fill: currentColor;
 }
 .tel-footer:focus,
 .tel-footer:hover {
-  color: rgba(33, 150, 243, 1);
+  color: var(--body-text-color);
   
 }
 
@@ -910,7 +883,7 @@ color: var(--primery-fon-color);
   width: 44px;
   height: 44px;
   
-  fill: #ffffff;
+  fill: var(--primery-fon-color);
   border-radius: 50%;
 
   
@@ -921,7 +894,7 @@ color: var(--primery-fon-color);
   transition-timing-function: var(--transition-timing-function);
 }
 .social__icon__footer {
-  fill:#ffffff;
+  fill:var(--primery-fon-color);
 
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -959,9 +932,7 @@ color: var(--primery-fon-color);
   padding-bottom: 20px;
 
 }
-/**.label__text__footer {
-  color: red;
-}**/
+
 .field__footer {
   display: flex;
   
@@ -1300,10 +1271,11 @@ border-radius: 50%;
 background-color: transparent;
 
 }
-.modal__close:hover {
-  border-color: var(--body-text-color);
-  
+.close__icon:hover {
+  fill: var(--body-text-color);
  }
+
+
 
 
 /* .form { */
