@@ -1270,6 +1270,7 @@ background-color: transparent;
 
 .modal__close:hover {
   border-color: #2196f3;
+  color: #2196f3;
 }
 
 
